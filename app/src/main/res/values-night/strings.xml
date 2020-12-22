@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="subscriber_name_hint">subscriber_name_hint</string>
+    <string name="subscriber_email_hint">subscriber_email_hint</string>
+    <string name="subscriber_button">Add</string>
+    <string name="subscriber_title">Subscriber</string>
+</resources>

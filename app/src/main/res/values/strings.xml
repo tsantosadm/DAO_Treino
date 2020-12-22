@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Subscribers</string>
+    <string name="subscriber_name_hint">Informe Nome</string>
+    <string name="subscriber_email_hint">Informe Email</string>
+    <string name="subscriber_button">Add</string>
+    <string name="subscriber_title">Subscriber</string>
+</resources>
