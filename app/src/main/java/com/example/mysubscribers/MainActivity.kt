@@ -2,8 +2,10 @@ package com.example.mysubscribers
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.widget.Toolbar
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
         val appBarConfiguration = AppBarConfiguration(navController.graph)
-        app_toolbar.setupWithNavController(navController, appBarConfiguration)
+        val app_toolbar = findViewById<Toolbar>(R.id.app_toolbar)
+        NavigationUI.setupWithNavController(app_toolbar, navController, appBarConfiguration)
     }
 }
